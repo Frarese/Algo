@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/frarese/Documenti/Algo/week3/firsthit/secondhit.cpp
+iostream
+-
+CGAL/Exact_predicates_exact_constructions_kernel.h
+-
+climits
+-
+

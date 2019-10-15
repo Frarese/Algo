@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/firsthit.dir/firsthit.cpp.o  -o firsthit /usr/lib/libCGAL.so.13.0.3 -lmpfr -lgmp 

@@ -1,0 +1,4 @@
+/home/frarese/Documenti/Algo/week3/firsthit/CMakeFiles/edit_cache.dir
+/home/frarese/Documenti/Algo/week3/firsthit/CMakeFiles/firsthit.dir
+/home/frarese/Documenti/Algo/week3/firsthit/CMakeFiles/rebuild_cache.dir
+/home/frarese/Documenti/Algo/week3/firsthit/CMakeFiles/secondhit.dir

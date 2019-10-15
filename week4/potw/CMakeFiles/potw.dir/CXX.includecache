@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/frarese/Documenti/Algo/week4/week4/potw/potw.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+CGAL/Exact_predicates_exact_constructions_kernel.h
+-
+

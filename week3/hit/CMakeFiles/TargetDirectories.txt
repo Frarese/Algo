@@ -1,0 +1,3 @@
+/home/frarese/Documenti/Algo/week3/hit/CMakeFiles/rebuild_cache.dir
+/home/frarese/Documenti/Algo/week3/hit/CMakeFiles/hit.dir
+/home/frarese/Documenti/Algo/week3/hit/CMakeFiles/edit_cache.dir

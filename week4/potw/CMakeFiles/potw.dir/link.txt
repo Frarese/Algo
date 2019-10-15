@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/potw.dir/potw.cpp.o  -o potw /usr/lib/libCGAL.so.13.0.3 -lmpfr -lgmp 

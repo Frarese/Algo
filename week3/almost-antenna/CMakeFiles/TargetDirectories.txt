@@ -1,0 +1,3 @@
+/home/frarese/Documenti/Algo/week3/almost-antenna/CMakeFiles/rebuild_cache.dir
+/home/frarese/Documenti/Algo/week3/almost-antenna/CMakeFiles/out.dir
+/home/frarese/Documenti/Algo/week3/almost-antenna/CMakeFiles/edit_cache.dir
