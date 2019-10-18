@@ -6,75 +6,6 @@
 typedef std::vector<int> Vi;
 typedef std::vector<Vi> VVi;
 
-int rec(int c, int col, VVi &mem, VVi &r, Vi &C)
-{
-	if(r[c].size() == 0)
-		return C[c]*col;
-
-
-	if(mem[col][c] != -1)
-		return mem[col][c];
-
-	int result = 0;
-	if(col)
-	{
-		for(int i = 0; i< r[c].size(); ++i)
-				result += std::min(rec(r[c][i],0 ,mem,r,C), rec(r[c][i],1,mem,r,C));
-		mem[1][c] = result + C[c];
-
-		return mem[1][c];
-	}
-	else
-	{
-		int bestChild;
-		int bestCost = INT_MAX;
-		bool leaf;
-		for(int i = 0; i< r[c].size(); ++i)
-		{
-			int v = r[c][i];
-			if(r[v].size() == 0)
-				leaf = true;
-		}
-		if(leaf)
-			for(int i = 0; i< r[c].size(); ++i)
-			{	
-			
-				int v = r[c][i];
-				if(r[v].size()== 0)
-					result += rec(v,1,mem,r,C);
-				else
-					result += std::min(rec(v,0 ,mem,r,C), rec(v,1,mem,r,C));
-			}
-		else
-		{
-			for(int i = 0; i< r[c].size(); ++i)
-			{
-				int v = r[c][i];
-				int cost = rec(v,1,mem,r,C);
-
-				if(cost < bestCost)
-				{
-					bestChild = v;
-					bestCost = cost;
-				}
-			}
-			result += bestCost;
-			for(int i = 0; i< r[c].size(); ++i)
-			{
-				int v = r[c][i];
-				if(v != bestChild)
-				{
-					result += std::min(rec(v,0 ,mem,r,C), rec(v,1,mem,r,C));
-				}
-			}
-		
-		}
-		mem[0][c] = result;
-		
-		return mem[0][c];
-	}
-}
-
 
 
 void chariot(int n)
@@ -92,8 +23,7 @@ void chariot(int n)
 		std::cin >> cost[i];
 
 	VVi memo(2, Vi(n, -1));
-	int result = std::min(rec(0,0 , memo, roads, cost), rec(0,1,memo,roads,cost));
-		
+	int result = 0;		
 	std::cout << result << "\n";
 }
 
