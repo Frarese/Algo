@@ -1,6 +1,5 @@
 #include<iostream>
 #include <vector>
-
 #include<boost/graph/adjacency_list.hpp>
 #include<boost/graph/push_relabel_max_flow.hpp>
 
@@ -42,9 +41,11 @@ public:
 
 void london(int h, int w)
 {
+	//Keeping track of letters inside the message and letter pairs inside the newspaper
 	vector<int> count(26,0);
 	vector<vector<int>> node(26, vector<int>(26,0));
 
+	//Message, Graoh and newspaper
 	string message;
 	vector<string> front(h), back(h);
 	Graph G(26);
@@ -56,18 +57,14 @@ void london(int h, int w)
 	EdgeAdder eaG(G, capacitymap, revedgemap);
 
 	cin >> message;
-
+	//Counting occurences of each letter
 	for(int i = 0; i < message.length(); i++)
-	{
-		count[message[i] -65]++;
-		//eaG.addEdge(message[i] - 65, sink,1);
-	}
-
+		count[message[i] -65]++; // implicit cast of chars to int, the oldest trick in the book
+	//Letter's "demand"
 	for(int i = 0; i< 26; i++)
-	{
 		eaG.addEdge(i,sink,count[i]);
-	}
 
+	//Building newspaper and letters pairs
 	for(int i = 0; i< h; i++)
 		cin >> front[i];
 
@@ -79,7 +76,7 @@ void london(int h, int w)
 				node[front[i][j]-65][back[i][w-j-1]-65]++;
 		}
 	}
-
+	//adding a node for each letters pair and adeguately connecting them
 	for(int i= 0; i< 26; i++)
 	{
 		for(int j = 0; j< 26; j++)
@@ -90,21 +87,17 @@ void london(int h, int w)
 				if(i == j && edge(i,sink,G).second)
 					eaG.addEdge(source,i,node[i][j]);
 				else
-				{	//if(edge(i,sink,G).second && edge(j,sink,G).second)
-				//	{
+				{
 						eaG.addEdge(source,e,node[i][j]);
 						eaG.addEdge(e,i,node[i][j]);
 						eaG.addEdge(e,j,node[i][j]);
-				//	}
-				//	else
-				//		if(edge(i,sink,G).second)
-				//			eaG.addEdge(source,i,node[i][j]);
 				}
 			}
 		}
 	}
 
-		long flow = boost::push_relabel_max_flow(G,source,sink);
+	// Compute flow and check message feaseability
+	long flow = boost::push_relabel_max_flow(G,source,sink);
 	if(flow == message.length())
 		cout << "Yes" << endl;
 	else
