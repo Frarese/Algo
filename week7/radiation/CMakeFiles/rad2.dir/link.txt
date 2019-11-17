@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/rad2.dir/rad2.cpp.o  -o rad2 /usr/lib/libCGAL.so.13.0.3 -lmpfr -lgmp 

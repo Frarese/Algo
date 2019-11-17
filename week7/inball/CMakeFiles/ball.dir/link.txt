@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/ball.dir/ball.cpp.o  -o ball /usr/lib/libCGAL.so.13.0.3 -lmpfr -lgmp 

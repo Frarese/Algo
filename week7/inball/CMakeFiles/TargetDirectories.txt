@@ -1,0 +1,5 @@
+/home/frarese/Documenti/Algo/week7/inball/CMakeFiles/rebuild_cache.dir
+/home/frarese/Documenti/Algo/week7/inball/CMakeFiles/cgal_check_build_system.dir
+/home/frarese/Documenti/Algo/week7/inball/CMakeFiles/edit_cache.dir
+/home/frarese/Documenti/Algo/week7/inball/CMakeFiles/ball.dir
+/home/frarese/Documenti/Algo/week7/inball/CMakeFiles/ALL_CGAL_TARGETS.dir

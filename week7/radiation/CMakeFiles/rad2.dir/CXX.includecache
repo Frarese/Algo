@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/frarese/Documenti/Algo/week7/radiation/rad2.cpp
+iostream
+-
+cassert
+-
+CGAL/QP_models.h
+-
+CGAL/QP_functions.h
+-
+vector
+-
+CGAL/Gmpzf.h
+-
+

@@ -1,0 +1,5 @@
+/home/frarese/Documenti/Algo/week7/maximizeit/CMakeFiles/edit_cache.dir
+/home/frarese/Documenti/Algo/week7/maximizeit/CMakeFiles/rebuild_cache.dir
+/home/frarese/Documenti/Algo/week7/maximizeit/CMakeFiles/cgal_check_build_system.dir
+/home/frarese/Documenti/Algo/week7/maximizeit/CMakeFiles/minmax.dir
+/home/frarese/Documenti/Algo/week7/maximizeit/CMakeFiles/ALL_CGAL_TARGETS.dir
