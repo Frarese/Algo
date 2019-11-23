@@ -1,0 +1,3 @@
+/home/frarese/Documenti/Algo/week8/graypes/CMakeFiles/rebuild_cache.dir
+/home/frarese/Documenti/Algo/week8/graypes/CMakeFiles/out.dir
+/home/frarese/Documenti/Algo/week8/graypes/CMakeFiles/edit_cache.dir

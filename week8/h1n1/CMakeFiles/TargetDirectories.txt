@@ -1,0 +1,5 @@
+/home/frarese/Documenti/Algo/week8/h1n1/CMakeFiles/edit_cache.dir
+/home/frarese/Documenti/Algo/week8/h1n1/CMakeFiles/rebuild_cache.dir
+/home/frarese/Documenti/Algo/week8/h1n1/CMakeFiles/cgal_check_build_system.dir
+/home/frarese/Documenti/Algo/week8/h1n1/CMakeFiles/zombie.dir
+/home/frarese/Documenti/Algo/week8/h1n1/CMakeFiles/ALL_CGAL_TARGETS.dir

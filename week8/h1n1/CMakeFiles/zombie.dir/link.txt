@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/zombie.dir/zombie.cpp.o  -o zombie /usr/lib/libCGAL.so.13.0.3 -lmpfr -lgmp 

@@ -1,0 +1,5 @@
+/home/frarese/Documenti/Algo/week8/bistro/CMakeFiles/edit_cache.dir
+/home/frarese/Documenti/Algo/week8/bistro/CMakeFiles/rebuild_cache.dir
+/home/frarese/Documenti/Algo/week8/bistro/CMakeFiles/cgal_check_build_system.dir
+/home/frarese/Documenti/Algo/week8/bistro/CMakeFiles/find.dir
+/home/frarese/Documenti/Algo/week8/bistro/CMakeFiles/ALL_CGAL_TARGETS.dir

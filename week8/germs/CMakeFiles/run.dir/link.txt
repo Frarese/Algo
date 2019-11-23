@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/run.dir/run.cpp.o  -o run -lmpfr -lgmp /usr/lib/libCGAL_Core.so.13.0.3 /usr/lib64/libboost_thread.so.1.71.0 /usr/lib64/libboost_system.so.1.71.0 /usr/lib/libCGAL.so.13.0.3 /usr/lib64/libboost_thread.so.1.71.0 /usr/lib64/libboost_system.so.1.71.0 -lmpfr -lgmp -lpthread 

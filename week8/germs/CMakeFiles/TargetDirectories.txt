@@ -1,0 +1,5 @@
+/home/frarese/Documenti/Algo/week8/germs/CMakeFiles/edit_cache.dir
+/home/frarese/Documenti/Algo/week8/germs/CMakeFiles/rebuild_cache.dir
+/home/frarese/Documenti/Algo/week8/germs/CMakeFiles/cgal_check_build_system.dir
+/home/frarese/Documenti/Algo/week8/germs/CMakeFiles/run.dir
+/home/frarese/Documenti/Algo/week8/germs/CMakeFiles/ALL_CGAL_TARGETS.dir
