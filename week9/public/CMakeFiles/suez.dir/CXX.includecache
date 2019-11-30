@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/frarese/Documenti/Algo/week9/public/suez.cpp
+CGAL/QP_models.h
+-
+CGAL/QP_functions.h
+-
+CGAL/Gmpq.h
+-
+iostream
+-
+climits
+-
+vector
+-
+cmath
+-
+
