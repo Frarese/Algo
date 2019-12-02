@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/frarese/Documenti/Algo/week10/light/test.cpp
+CGAL/Exact_predicates_inexact_constructions_kernel.h
+-
+CGAL/basic.h
+-
+CGAL/squared_distance_2.h
+-
+CGAL/Triangulation_vertex_base_with_info_2.h
+-
+CGAL/Point_set_2.h
+-
+

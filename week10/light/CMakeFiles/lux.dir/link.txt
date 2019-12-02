@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/lux.dir/lux.cpp.o  -o lux /usr/lib/libCGAL.so.13.0.3 -lmpfr -lgmp 
