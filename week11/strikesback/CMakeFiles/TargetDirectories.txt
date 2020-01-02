@@ -1,0 +1,5 @@
+/home/frarese/Documenti/Algo/week11/strikesback/CMakeFiles/edit_cache.dir
+/home/frarese/Documenti/Algo/week11/strikesback/CMakeFiles/rebuild_cache.dir
+/home/frarese/Documenti/Algo/week11/strikesback/CMakeFiles/cgal_check_build_system.dir
+/home/frarese/Documenti/Algo/week11/strikesback/CMakeFiles/fett.dir
+/home/frarese/Documenti/Algo/week11/strikesback/CMakeFiles/ALL_CGAL_TARGETS.dir

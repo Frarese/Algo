@@ -1,0 +1,5 @@
+/home/frarese/Documenti/Algo/week12/legions/CMakeFiles/edit_cache.dir
+/home/frarese/Documenti/Algo/week12/legions/CMakeFiles/rebuild_cache.dir
+/home/frarese/Documenti/Algo/week12/legions/CMakeFiles/cgal_check_build_system.dir
+/home/frarese/Documenti/Algo/week12/legions/CMakeFiles/roman.dir
+/home/frarese/Documenti/Algo/week12/legions/CMakeFiles/ALL_CGAL_TARGETS.dir
