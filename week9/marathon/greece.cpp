@@ -48,6 +48,7 @@ void marathon()
   for (size_t i = 0; i < m; i++) {
     int a,b,c,d; std::cin >> a >> b >> c >> d;
     adder.add_edge(a,b,c,d);
+    adder.add_edge(b,a,c,d);
   }
   int path;
   int cap = 1;

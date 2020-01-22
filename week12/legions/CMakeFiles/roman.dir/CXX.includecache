@@ -11,7 +11,7 @@ CGAL/QP_models.h
 -
 CGAL/QP_functions.h
 -
-CGAL/Gmpq.h
+CGAL/Gmpz.h
 -
 cmath
 -

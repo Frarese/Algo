@@ -278,7 +278,7 @@ clues__SOURCE_DIR:STATIC=/home/frarese/Documenti/Algo/week12/clues
 Boost_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_DIR
 Boost_DIR-ADVANCED:INTERNAL=1
-CGAL_EXECUTABLE_TARGETS:INTERNAL=sherlock
+CGAL_EXECUTABLE_TARGETS:INTERNAL=sherlock;sherlock
 //Directory containing the GraphicsView package
 CGAL_GRAPHICSVIEW_PACKAGE_DIR:INTERNAL=/usr/include/CGAL/
 //Result of TRY_COMPILE
@@ -296,7 +296,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=16
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.

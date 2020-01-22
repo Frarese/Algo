@@ -44,28 +44,29 @@ void solve()
   graph G(2*n+2);
   int source = 2*n;
   int sink = 2*n+1;
-  edge_adder adder1(G);
+  edge_adder adder(G);
 
-  for (size_t i = 0; i < k; i++) {
+  for(int i = 0; i< k; i++)
+  {
     int x; std::cin >> x;
-    adder1.add_edge(source, 2*x, 1);
-    adder1.add_edge(2*x+1, sink, 1);
-
+    adder.add_edge(source,x,1);
+    adder.add_edge(x+n,sink,1);
   }
-  for (size_t i = 0; i < l; i++) {
+  for(int i = 0; i< l; i++)
+  {
     int x; std::cin >> x;
-    adder1.add_edge(2*x, 2*x+1, 1);
+    adder.add_edge(x,x+n,1);
   }
-  for (size_t i = 0; i < m; i++) {
+  for(int i = 0; i< m; i++)
+  {
     int x,y; std::cin >> x >> y;
-    adder1.add_edge(2*x, 2*y, 500);
-    adder1.add_edge(2*x+1, 2*y+1, 1);
+    adder.add_edge(x,y,500);
+    adder.add_edge(x+n,y+n,1);
   }
 
-  long flow1 = boost::push_relabel_max_flow(G, source, sink);
+  long flow = boost::push_relabel_max_flow(G,source,sink);
 
-  std::cout << flow1 << "\n";
-  //std::cout << std::min(flow1,flow2) << "\n";
+  std::cout << flow << "\n";
 
 }
 
