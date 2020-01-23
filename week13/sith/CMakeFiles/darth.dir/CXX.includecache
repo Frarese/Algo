@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/frarese/Documenti/Algo/week13/sith/darth.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+CGAL/Exact_predicates_inexact_constructions_kernel.h
+-
+CGAL/Triangulation_vertex_base_with_info_2.h
+-
+CGAL/Delaunay_triangulation_2.h
+-
+boost/pending/disjoint_sets.hpp
+-
+
