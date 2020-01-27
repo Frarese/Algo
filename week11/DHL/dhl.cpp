@@ -5,58 +5,67 @@
 
 typedef std::vector<int> Vi;
 typedef std::vector<Vi> Vvi;
+typedef std::vector<Vvi> Vii;
 
-int rec(int l, int r, Vi &a, Vi &b, Vvi &mem)
+#define N 1000+2
+#define top 100*100*N*N+1
+
+Vi a(N), b(N);
+Vii mem(N, Vvi(N, Vi(3,-1)));
+
+
+inline int rec(int l, int r, int status)
 {
-  if(mem[l][r] != -1)
-    return mem[l][r];
+  if(mem[l][r][status] != -1)
+    return mem[l][r][status];
 
-  int Sa = 0, Sb = 0;
-  int result = INT_MAX;
-  for(int i = l; i> 0; i--)
-  {
-    Sa += a[i]; Sb = 0;
-    for(int j = r; j > 0; j--)
-    {
-      Sb += b[j];
-      result = std::min(result, rec(i-1, j-1,a,b,mem) + (Sa - (l-i+1))*(Sb - (r-j+1)));
-    }
-  }
-
-  mem[l][r] = result;
-  return result;
-}
-
-
-void solve()
-{
-  int n; std::cin >> n;
-  Vi a(n+1), b(n+1);
-
-  for(int i = 1; i< n+1; i++)
-    std::cin>> a[i];
-
-  for(int i = 1; i< n+1; i++)
-    std::cin>> b[i];
-
-  Vvi mem(n+1, Vi(n+1, -1));
-  mem[0][0] = 0;
-
-  for(int i= 1; i< n+1; i++)
-  {
-    mem[0][i] = 100*(n+1)*100*n;
-    mem[i][0] = 100*(n+1)*100*n;
-  }
-
-  int result = rec(n,n,a,b,mem);
-  std::cout << result << "\n";
-
+  if(status == 0)
+	  return mem[l][r][status] = std::min(rec(l,r,1), rec(l,r,2));
+  if(status == 1)
+	  return mem[l][r][status] = std::min(rec(l-1,r-1,0), rec(l-1,r,1)) + a[l]*b[r];
+  if(status == 2)
+	  return mem[l][r][status] = std::min(rec(l-1,r-1,0), rec(l,r-1,2)) + a[l]*b[r];
 }
 
 int main()
 {
   std::ios_base::sync_with_stdio(false);
+  std::cin.tie(0);
   int t; std::cin >> t;
+
+  
+  for(int i= 0; i< N; i++)
+  {
+    for(int j = 0; j<3; j++)
+    { 
+    	mem[0][i][j] = mem[i][0][j] = top;
+    }
+  }
+
+  mem[0][0][0] = 0;
   while(t--)
-    solve();
+  {	
+    int n; std::cin >> n;
+
+
+  for(int i = 1; i< n+1; i++)
+  {
+    std::cin>> a[i];
+    a[i]--;
+  }
+
+  for(int i = 1; i< n+1; i++)
+  {
+    std::cin>> b[i];
+    b[i]--;
+  }
+
+  for(int i = 1; i< n +1; i++)
+	  for(int j = 1; j< n+1; j++)
+		  mem[i][j][0] =  mem[i][j][1] = mem[i][j][2] = -1;
+
+
+  std::cout << rec(n,n,0) << "\n";
+
+  }
 }

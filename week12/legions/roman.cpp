@@ -21,11 +21,11 @@ void roman()
     long s = (long)std::sqrt(a*a + b*b);
 
     if(a*x+b*y+c > 0){
-      lp.set_a(X,i*2 +1,-a); lp.set_a(Y,i*2 +1,-b); lp.set_b(i*2 + 1, c);
+     // lp.set_a(X,i*2 +1,-a); lp.set_a(Y,i*2 +1,-b); lp.set_b(i*2 + 1, c);
       lp.set_a(X,i*2,-a); lp.set_a(Y,i*2,-b); lp.set_a(R, i*2, s*v); lp.set_b(i*2,c);
   }
     else if(a*x+b*y+c < 0){
-      lp.set_a(X,i*2 +1,a); lp.set_a(Y,i*2 +1,b); lp.set_b(i*2 + 1, -c);
+     // lp.set_a(X,i*2 +1,a); lp.set_a(Y,i*2 +1,b); lp.set_b(i*2 + 1, -c);
       lp.set_a(X,i*2,a); lp.set_a(Y,i*2,b); lp.set_a(R, i*2, s*v); lp.set_b(i*2, -c);
     }
   }
